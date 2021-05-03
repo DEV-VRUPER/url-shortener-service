@@ -38,7 +38,7 @@ public class UrlController {
      * @param request To determine the protocol://domain:port part to form shortened url
      * @return An object of ShortUrl serialized as JSON in the response
      */
-    @PostMapping("/shorten")
+    @PostMapping("/shortUrl")
     public ResponseEntity<Object> saveUrl(@RequestBody FullUrl fullUrl, HttpServletRequest request) {
 
         // Validation checks to determine if the supplied URL is valid
